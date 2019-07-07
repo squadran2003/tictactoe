@@ -34,7 +34,7 @@ class Grid:
 
     def get_square(self, x, y):
         """
-        params: x: outer list index, y outer list index
+        params: x: outer list index, y inner list index
         return: returns a square object
 
         """
@@ -44,6 +44,6 @@ class Grid:
     def open_squares(self):
         """return number of empty squares
 
-        return: integer fo open squares
+        return: integer of open squares
         """
         return len([square for square in self.squares if not square[0].filled])
