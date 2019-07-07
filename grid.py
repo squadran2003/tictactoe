@@ -42,8 +42,9 @@ class Grid:
         return self.squares[x][y]
 
     def open_squares(self):
-        """return number of empty squares
+        """
+        number of empty squares
 
-        return: integer of open squares
+        return: integer of open squares, or squares that dont have a charc
         """
         return len([square for square in self.squares if not square[0].filled])
